@@ -8,6 +8,7 @@ class OurTest(unittest.TestCase):
         run_result=self.a+self.b
         self.assertEqual(run_result,self.result,"self.a+self.b不等于3")
     def tearDown(self):
+        # 类似类的del方法，用来回收测试的环境
         pass
 if __name__=="__main__":
     unittest.main()
